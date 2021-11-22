@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/css/PJ2css.css">
+
+    <title>Coffe Tung Lam</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</head>
+
+<body>  
+
+    <div class="w3-top">
+
+        <nav class="navbar navbar-inverse">
+
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+
+                    </button>
+
+                    <a class="navbar-brand" href="/Project4/PJ4.php">
+
+                        <img src="/Project4/image/logo.png" alt="Cafe image">
+
+                    </a>
+
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+
+                    <ul class="nav navbar-nav">
+
+                        <li class="active">
+                            
+                            <div class="dropdown">
+
+                                <button class="dropbtn" onclick="document.location='/Project4/PJ4-sanpham.php'">Sản phẩm <span class="glyphicon glyphicon-menu-down"></span></button>
+
+                                <div class="dropdown-content">
+
+                                    <div class="col-sm-6">
+
+                                        <a href="#"><b>Nhang trầm</b></a>
+
+                                        <a href="#">Nhang trầm không tăm</a>
+
+                                        <a href="#">Nhang nụ</a>
+
+                                        <a href="#">Nhang vòng</a>
+
+                                        <a href="#">Nhang cây</a>
+
+                                    </div>
+
+                                    <div class="col-sm-6">
+
+                                        <a href="#"><b>Trà và bánh</b></a>
+
+                                        <a href="#">Trà khô</a>
+
+                                        <a href="#">Chè tươi</a>
+
+                                        <a href="#">Trà túi lọc</a>
+
+                                        <a href="#">Bánh cáy</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+
+                        <li>
+
+                            <div class="dropdown">
+
+                                <button class="dropbtn" onclick="document.location='/Project4/PJ4-traquan.php'">Món chay & trà <span class="glyphicon glyphicon-menu-down"></span></button>
+
+                                <div class="dropdown-content">
+
+                                    <a href="#">Món ăn chay</a>
+
+                                    <a href="#">Trà quán</a>
+
+                                    <a href="#">Phòng VIP</a>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+
+                        <li>
+
+                            <div class="dropdown">
+
+                                <button class="dropbtn" onclick="document.location='/Project4/PJ4-khoahoc.php'">Khóa học <span class="glyphicon glyphicon-menu-down"></span></button>
+
+                                <div class="dropdown-content">
+                                    
+                                    <a href="#">Khóa học tu thiền</a>
+
+                                    <a href="#">Khóa học văn hóa chùa và đặc sản</a>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+
+                        <li><a  href="/Project4/PJ4-chuakeo.php">Về chùa Keo</a></li>
+
+                        <li><a href="#">Đặt hàng trực tuyến</a></li>
+
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li>
+
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span> Tài khoản</button>
+
+                            <div class="modal fade" id="myModal" role="dialog">
+
+                                <div class="modal-dialog">
+
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                            <h4 class="modal-title">Đăng nhập</h4>
+
+                                        </div>
+
+                                        <div class="modal-body">
+
+                                            <form class="header_top_right_button_login_form" onsubmit="login_form()">
+
+                                                <label for="header_top_right_button_login_email"></label>
+
+                                                <input type="text" id="header_top_right_button_login_email_tx" name="" placeholder="Email"><br>
+
+                                                <label for="header_top_right_button_login_email"></label>
+
+                                                <input type="text" id="header_top_right_button_login_password_tx" name="" placeholder="Password"><br>
+                                        
+                                            </form>
+
+                                        </div>
+
+                                        <div class="modal-footer">
+
+                                            <button type="button" class="btn-btn-login" >Login</button>
+                                    
+                                            <button type="button" class="btn-btn-default" data-dismiss="modal">Cancel</button>
+
+                                        </div>
+
+                                    </div>
+                                  
+                                </div>
+
+                            </div>
+
+                        </li>
+
+                        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+    <div class="container">
+
+	    <div class="main">
+
+			<h1>KHÓA HỌC TU BỔ VÀ HÀNH TRÌ</h1><hr>
+
+			<h2>NỘI DUNG CHÍNH</h2>
+
+			<p>Nội quy & oai nghi khoá tu Phật thất</p>
+
+			<div class="row">
+				
+				<div class="col-md-3">
+
+					<div class="row main1">
+						
+						<div class="col-md-6 main2">
+							
+							<img src="/Project4/image/khoatu1.jpg" alt="Khoa tu">
+
+						</div>
+
+						<div class="col-md-6 main2">
+							
+							<h3>Thời gian biểu 1</h3>
+
+					      	<p>
+
+					      		03h 30   :    Báo thức <br>
+
+								04h - 5h 30 :    Công phu niệm Phật <br>
+
+								06h  - 6h  30:    Điểm tâm sáng <br>
+
+							</p>
+							
+						</div>
+
+					</div>	      	
+
+				</div>
+
+				<div class="col-md-3">
+
+					<div class="row main1">
+						
+						<div class="col-md-6 main2">
+							
+							<img src="/Project4/image/khoatu2.jpg" alt="Khoa tu">
+
+						</div>
+
+						<div class="col-md-6 main2">
+							
+							<h3>Thời gian biểu 2</h3>
+
+					      	<p>
+
+					      		07h - 8h 30 :    Nghe pháp <br>
+								
+								09h -10h 30 :    Công phu niệm Phật <br>
+								
+								11h - 11h 45:    Thọ trai <br>
+
+							</p>
+							
+						</div>
+
+					</div>	      	
+
+				</div>
+
+				<div class="col-md-3">
+
+					<div class="row main1">
+						
+						<div class="col-md-6 main2">
+							
+							<img src="/Project4/image/khoatu3.jpg" alt="Khoa tu">
+
+						</div>
+
+						<div class="col-md-6 main2">
+							
+							<h3>Thời gian biểu 3</h3>
+
+					      	<p>
+
+					      		12h - 13h 30:    Ngủ nghỉ <br>
+								
+								14h - 16h :    Công phu niệm Phật <br>
+								
+								16h - 18h :    Tắm giặt <br>
+
+							</p>
+							
+						</div>
+
+					</div>	      	
+
+				</div>
+
+				<div class="col-md-3">
+
+					<div class="row main1">
+						
+						<div class="col-md-6 main2">
+							
+							<img src="/Project4/image/khoatu4.jpg" alt="Khoa tu">
+
+						</div>
+
+						<div class="col-md-6 main2">
+							
+							<h3>Thời gian biểu 4</h3>
+
+					      	<p>
+
+					      		18h - 18h 30:    Ăn chiều <br>
+
+								19h - 20h 30:    Công phu niệm Phật <br>
+
+								21h - 21h 30:    Tịnh tọa xong thì ngủ nghỉ. <br>
+
+							</p>
+							
+						</div>
+
+					</div>	      	
+
+				</div>
+
+			</div>			
+
+			<div class="content">
+
+			  	<img src="/Project4/image/khoatu5.jpg" alt="Khoa tu" style="width:100%">
+
+			  	<h3>CĂN DẶN</h3>
+
+			  	<p>
+
+			  		Chúng ta đến với đạo Phật là vì muốn vượt lên trên cuộc đời tầm thường của thế nhân để đạt được chân thiện mỹ. Nếu chúng ta vào đạo rồi mà vẫn tiếp tục cuộc đời trôi nổi cũ hay còn tệ hơn cuộc đời thường của thế nhân thì đó chỉ làm hoen ố đạo chớ không phải là người mộ đạo.
+				   	Cho nên, là Phật tử thì phải có tinh thần trách nhiệm nuôi dưỡng, hiếu thuận với cha mẹ, kính thờ sư trưởng, tu tập thập thiện, phát tâm Bồ đề, tin sâu nhân quả, tinh tấn tu hành, cố gắng giữ giới để xứng đáng với danh nghĩa của người có đạo đức, nhằm đem lại hạnh phúc cho mình và cho chúng sinh. Một xã hội mà mọi người đều thực hiện năm giới cấm thì đó là một xã hội gương mẫu văn minh nhất thế giới vậy. Muốn có đạo đức thì phải theo học với các bậc đức hạnh thanh cao siêu thoát, mà đức Phật là đấng trọn lành tiêu biểu cho nền đạo đức toàn chân, toàn thiện, toàn mỹ.
+				   	Có đạo đức, con người mới có lòng từ bi, sáng suốt, công bình, gia đình mới có hạnh phúc chân thật, xã hội mới được thực sự văn minh cả về hai phương diện vật chất và tinh thần. Người muốn học hỏi đạo lý và đức hạnh của Phật thì trước phải quy y Tam bảo và thọ trì ngũ giới. Sau đó người Phật tử phải tinh tấn trau giồi đức hạnh và học hỏi các phương pháp tu giải thoát bằng cách cải thiện mọi sinh hoạt trong đời sống hằng ngày như sau: <br>
+				   	<i>1/ Hết lòng tôn kính Phật, Pháp, Tăng là những bậc thầy cao quý, hộ trì ngôi Tam bảo để Phật Pháp trường tồn, thường niệm Phật để tâm được an định.</i><br>
+				   	<i>2/ Nghiêm trì giới luật mà mình đã thọ để khỏi gây tạo nghiệp ác, tránh quả báo về sau.</i><br>
+				   	<i>3/ Tập ăn chay kỳ, chay trường để trưởng dưỡng lòng từ bi. Vừa bớt tính hung hăng, hiếu sát và để bảo vệ sức khỏe, ít bệnh hoạn.</i><br>
+				   	<i>4/ Dứt bỏ những tính hung dữ, gian tham, trộm cắp, dối trá, để trở nên con người hiền lành ngay thẳng, chân chính.</i><br>
+				   	<i>5/ Loại bỏ các thói hư tật xấu như cờ bạc, hút sách, ăn chơi phung phí v.v..., phải biết giữ tiết độ trong việc ăn mặc và ngủ nghỉ. Tập theo lối sống đơn giản, giảm bớt những nhu cầu vật chất không cần thiết. Không cầu kỳ, không lập dị, không xa hoa, không buông lung.</i><br>
+				   	<i>6/ Không lười biếng ỷ lại mà phải siêng năng sốt sắng, đảm đang, tinh tấn tu học với ý chí tự lập tự cường, kiên nhẫn chịu đựng để vượt qua mọi gian lao trở ngại.</i><br>
+				   	<i>7/ Làm việc phải có tinh thần trách nhiệm. Việc làm phải nhẹ nhàng khéo léo, sạch sẽ, gọn gàng.</i><br>
+				   	<i>8/ Hành động, cử chỉ, lời nói phải luôn luôn ôn hòa nhẹ nhàng, khiêm tốn. Không cống cao ngã mạn, khinh người.</i><br>
+				   	<i>9/ Đối với mình thì khắc kỷ chế ngự vọng tâm, đối với người thì đại lượng bao dung và nhiệt tâm giúp đỡ. Khuyên mọi người chung quanh đều hướng về đường lành, trau giồi đạo đức, phát huy trí tuệ, dẹp bỏ các hủ tục mê tín dị đoan.</i><br>
+				   	<i>10/ Thường nghiên cứu kinh điển để có thể hiểu biết và thực hành đúng chánh pháp của đức Như Lai.</i><br>
+				   	<i>11/ Mỗi tháng nên đến chùa ít nhất hai ngày sám hối để sám trừ tội chướng, ăn năn lỗi trước, tránh chừa lỗi sau.</i><br>
+				   	<i>12/ Học thuộc các nghi thức tụng niệm thông thường để hòa được chúng khi tụng chung. Ngoài ra, nếu có hoàn cảnh thuận tiện, mỗi tuần hay mỗi tháng nên dành ra một ngày để về chùa thọ Bát quan trai, để học hỏi thêm những giáo lý cao siêu hơn và được gần gũi với chư Tăng trọn một ngày trong không khí trong lành thanh tịnh, khiến cho tâm hồn hưởng được những phút giây nhẹ nhàng an lạc, mà ở tại nhà thế tục không tìm thấy được.</i><br>
+				   	Tu học và thực hành được những điều trên đây là người dám làm cuộc cách mạng bản thân, bỏ tà quy chính, cải ác tùng thiện, mới xứng đáng là người Phật tử thuần thành và chân chính, để từng bước tiến lên hạnh xuất gia giải thoát.
+
+				   </p>
+
+			</div>
+
+		</div>
+	</div>   
+
+    <div class="solid"></div>
+
+    <footer>
+        
+        <div class="row" >
+
+            <div class="col-md-2 col-sm-12">
+
+            </div>
+
+            <div class="col-md-10 col-sm-12 footer-all">
+
+                <div class="row">
+                    
+                    <div class="col-md-5 col-sm-12 footer-text1">
+
+                        <h3><b>THÔNG TIN LIÊN HỆ</b></h3>
+
+                        <p class="footer-text2">
+
+                            Coffe Tung Lam là một cổ đông thuộc sở hữu của Tung Lam Creative với vai trò là nhà cung cấp các dịch vụ, quà tặng thời trang phật giáo đến với khách hàng khắp mọi miền tổ quốc. <br>
+
+                            Địa chỉ: Hà Nội - Hà Nội - Hà Nội - Hà Nội.
+
+                        </p>
+
+                    </div>
+
+                    <div class="col-md-2 col-sm-12 footer-text1">
+
+                        <h3><b>CHÍNH SÁCH</b></h3>
+
+                        <a href="#"> Hướng dẫn mua hàng</a><br>
+
+                        <a href="#"> Chính sách thanh toán</a><br>
+
+                        <a href="#"> Chính sách vạn chuyển</a><br>
+
+                    </div>
+
+                    <div class="col-md-2 col-sm-12 footer-text1">
+
+                        <h3><b>THÔNG TIN</b></h3>
+
+                        <a href="#"> Về chúng tôi</a><br>
+
+                        <a href="#"> Câu hỏi thường gặp</a><br>
+
+                        <a href="#"> Tin tức</a><br>
+
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 footer-text1">
+
+                        <h3><b>FAN PAGE</b></h3>
+
+                        <a href="https://www.facebook.com/chuakeothaibinh/" class="fa fa-facebook"></a>
+                        
+                        <a href="#" class="fa fa-twitter"></a>
+                        
+                        <a href="#" class="fa fa-google"></a>
+                        
+                        <a href="https://www.youtube.com/watch?v=P4Dui0bsPwE&ab_channel=V%C4%83nh%C3%B3aVi%E1%BB%87tNam" class="fa fa-youtube"></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-2 col-sm-12">
+
+            </div>
+            
+        </div>
+
+    </footer>
+
+</body>
