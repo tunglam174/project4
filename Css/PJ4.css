@@ -192,7 +192,7 @@
 
 					.one{
 
-						background-image: url("/lam/cafe/cafe1-2.jpg");
+						background-image: url("./image/chuakeo1.jpg");
 
 						background-position: center;
 
@@ -204,7 +204,7 @@
 
 					.two{
 
-						background-image: url("/lam/cafe/cafe2-3.jpg");
+						background-image: url("./image/chuakeo2.jpg");
 
 						background-position: center;
 
@@ -224,7 +224,7 @@
 
 					.three{
 
-						background-image: url("/lam/cafe/cafe3-2.jpg");
+						background-image: url("./image/chuakeo3.jpg");
 
 						background-position: center;
 
@@ -286,15 +286,15 @@
 				}
 
 				/* Several different images */
-				.bg-1 {background-image: url(/Project4/image/chuakeo16.jpg);}
-				.bg-2 {background-image: url(/Project4/image/chuakeo17.jpg);}
-				.bg-3-1 {background-image: url(/Project4/image/chuakeo18.jpg);}
-				.bg-4 {background-image: url(/Project4/image/chuakeo10.jpg);}
-				.bg-5 {background-image: url(/Project4/image/chuakeo12.jpg);}
-				.bg-6 {background-image: url(/Project4/image/chuakeo13.jpg);}
-				.bg-7 {background-image: url(/Project4/image/chuakeo11.jpg);}
-				.bg-8 {background-image: url(/Project4/image/chuakeo14.jpg);}
-				.bg-9 {background-image: url(/Project4/image/chuakeo15.jpg);}
+				.bg-1 {background-image: url(./image/chuakeo16.jpg);}
+				.bg-2 {background-image: url(./image/chuakeo17.jpg);}
+				.bg-3-1 {background-image: url(./image/chuakeo18.jpg);}
+				.bg-4 {background-image: url(./image/chuakeo10.jpg);}
+				.bg-5 {background-image: url(./image/chuakeo12.jpg);}
+				.bg-6 {background-image: url(./image/chuakeo13.jpg);}
+				.bg-7 {background-image: url(./image/chuakeo11.jpg);}
+				.bg-8 {background-image: url(./image/chuakeo14.jpg);}
+				.bg-9 {background-image: url(./image/chuakeo15.jpg);}
 				
 
 				.child-text1{
@@ -600,7 +600,7 @@
 	.content4{
 
 
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Project4/image/chuakeo2.jpg");
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./image/chuakeo2.jpg");
 
 	  	height: 500px;
 
